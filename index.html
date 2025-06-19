@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohan Dangal • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
 </head>
 <body>
+
 <header class="header">
-    <a href="#" class="logo"><span>Rohan</span></a>
+  <div class="container">
+    <a href="#" class="logo">Rohan<span>.</span></a>
     <nav class="navbar">
-        <a href="#">portfolio</a>
-        <a href="#">experience</a>
-        <a href="#">education</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="contact">contact me</a>
-    
+  </div>
 </header>
-<section class="home">
-    <div class="home-content">
-        <h3>Hello</h3>
-        <h1>I am <span>Rohan<br></span>a CS student</h1>  
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="intro">
+      <h3>Hello 👋</h3>
+      <h1>I'm <span>Rohan Dangal</span></h1>
+      <h2>A CS Student & Aspiring Full-Stack Developer</h2>
+      <p>I code with purpose and curiosity. Let’s build the future together.</p>
+      <a href="Rohan_Resume.pdf" class="btn download" download>Download Resume</a>
     </div>
-    <div class="img-box">
-        <img src="lsk.jpg" alt="" class="src">
+    <div class="hero-image">
+      <img src="prof img.png" alt="Rohan's Photo" />
     </div>
+  </div>
 </section>
-<section class="about">
-    <div class="about-img">
-        <img src="lsk.jpg" alt="">
-    </div>
-<div class="about-content">
-    <h2 class="heading">About <span>Me</span>
-    </h2>
-    <h3>CS <span>Student</span>
-    </h3>
 
-    <a href="#"class="btn-2">
-        Experience</a>
-</div>
+<section id="about" class="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I'm currently studying Computer Science at Tribhuvan University. I work with HTML, CSS, JavaScript, C, C++, and DSA. I'm also diving into backend development with Node.js, Express.js, MongoDB, and Tailwind CSS. Though I don't have professional experience yet, I'm actively building real-world projects to sharpen my skills.</p>
+  </div>
 </section>
-<section id="contact" class="contact-form">
-    <h2 class="contact-Me">Contact <span>Me</span></h2>
-    <form action="https://formsubmit.co/johndangal2061@gmail.com" method="POST">
-        <div class="input-box">
-            <input type="text" placeholder="full Name">
-           
-            <input type="email"
-            placeholder="email">
-        </div>
-        <div class="input-box">
-            <input type="number" placeholder="Phone number">
-            <input type="text"
-            placeholder="subject">
 
-        </div>
-        <textarea name="" id="" cols="30"
-        rows="10" placeholder= "your message"></textarea>
-        <input type="submit" value="send message"
-        class="btn-1">
-    </form>
-</section>
-<footer class="footer">
-
-    <div class="social">
-        <a href="https://www.linkedin.com/in/rohan-dangal-36b579244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwZXh0bgNhZW0CMTEAAR3uagadjhDb1OCjjrZLTxtjRmYKT68Z4rQ30aKiC5f5tfctxlDa1gcBnOE_aem_ZR8PYoC03-uMGpb3qCYh_g"><i class='bx bxl-linkedin-square'></i></a>
-        <a href="https://www.instagram.com/john_dangal/"><i class='bx bxl-instagram-alt'></i></a>
-<a href="https://www.facebook.com/john.dangal96"><i class='bx bxl-facebook-circle'></i></a>
-
-    </div>
-    <ul class="list">
-        <li>
-            <a href="#">FAQ</a>
-        </li>
-        <li>
-            <a href="#">About Me</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-        <li>
-            <a href="#">privacy policy</a>
-        </li>
-        
+<section id="skills" class="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>C, C++, DSA</li>
+      <li>In Progress: Node.js, Express.js, MongoDB, Tailwind CSS</li>
     </ul>
-    <p class="copyright">© 2024 Rohan | All right reserved</p>
+  </div>
+</section>
+
+<section id="contact" class="contact-form">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/johndangal2061@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/rohan-dangal-36b579244"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://www.instagram.com/john_dangal/"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="https://www.facebook.com/john.dangal96"><i class='bx bxl-facebook-circle'></i></a>
+    </div>
+    <p>© 2024 Rohan Dangal • All Rights Reserved</p>
+  </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
